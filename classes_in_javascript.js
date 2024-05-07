@@ -126,17 +126,17 @@
 
 //     you can send function as an default argument like this
 
-function getage(){
-    return 12;
-}
+// function getage(){
+//     return 12;
+// }
 
-function utlity(name="akash",age=getage()){
-    console.log("my name is:",name,"my age is:",age)
-}
-utlity("akash",21)
+// function utlity(name="akash",age=getage()){
+//     console.log("my name is:",name,"my age is:",age)
+// }
+// utlity("akash",21)
 
-utlity("akash")
-utlity()
+// utlity("akash")
+// utlity()
 
 
 
