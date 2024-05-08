@@ -20,7 +20,8 @@
 // let curr=new Date
 // console.log(curr)   -------> printing current date and time
 
-let date=new Date('june 20 2024 12 14')
-let newdate = new Date(2004,6,20,7)
-console.log(newdate)
+// let date=new Date('june 20 2024 12 14')
+// let newdate = new Date(2004,6,20,7)
+// console.log(newdate)
+ 
 
