@@ -50,24 +50,30 @@
 
 // (3) using iteration method 
 
-let src={
-    age:19,
-    waight:85,
-    height:180
+// let src={
+//     age:19,
+//     waight:85,
+//     height:180
 
-}
-let dest={
+// }
+// let dest={
 
-}
-for(let key in src){
-    // console.log(key)
-    let newkey= key;
-    let value=src[key];
-    // insert key and value in dest and create a clone
+// }
+// for(let key in src){
+//     // console.log(key)
+//     let newkey= key;      =============> clone is created using iteration wthis the help of for in loop
+//     let value=src[key];
+//     // insert key and value in dest and create a clone
 
-    dest[newkey]=value;
-}
+//     dest[newkey]=value;
+// }
 
-console.log(dest)
-src.age=80
-console.log(src)
+// console.log(dest)
+// src.age=80
+// console.log(src)
+
+
+
+// =========== garbage collector ===========
+
+// we din't have any control on garbage collector
