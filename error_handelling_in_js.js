@@ -67,7 +67,7 @@
 
 // }
 
-let err =100;
-if(err==10){
-    throw new Error("invalid json error")
-}
+// let err =100;
+// if(err==10){
+//     throw new Error("invalid json error")
+// }
