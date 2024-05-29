@@ -106,7 +106,7 @@
 // }
 // passing arrays in a fnction
 
- let arr=[10,20,30,40,50]
+//  let arr=[10,20,30,40,50]
 //  function getsum(){
 // let s=arr.length;
 // let sum=0
@@ -116,13 +116,13 @@
 //     }
 //     return sum
 //  }
-function getsum(arr){
-    let sum=0;
-    arr.forEach(value => {
-        sum+=value
-    });
-    return sum
-}
- let total=getsum
- console.log(total)
+// function getsum(arr){
+//     let sum=0;
+//     arr.forEach(value => {
+//         sum+=value
+//     });
+//     return sum
+// }
+//  let total=getsum
+//  console.log(total)
 

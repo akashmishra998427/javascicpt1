@@ -58,12 +58,16 @@
     // =============== if i want to show on only span content clicl function triggred==========================
 
 
-    function alertfunction(){
-        if(event.target.nodeName==='span'){
-            alert("you clicked on para"+event.target.textContent)
-        }
+//     function alertfunction(){
+//         if(event.target.nodeName==='span'){
+//             alert("you clicked on para"+event.target.textContent)
+//         }
        
-    }
+//     }
 
-    let maydiv=document.getElementById('wrapper')
-document.addEventListener('click',alertfunction)
+//     let maydiv=document.getElementById('wrapper')
+//   maydiv= document.addEventListener('click',alertfunction)
+let age=prompt("Enter your age");
+console.log(age)
+
+;

@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+button{
+    /* margin-top: 500px; */
+    margin-left: 50%;
+    width: 100px;
+    height: 35px;
+    border-radius: 4px;
+    border: 2px solid gray;
+    background-color: rgb(96, 215, 215);
+}
+
+#name{
+    width: 500px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 500;
+    border: 2px solid red;
+    background-color: aquamarine;
+}

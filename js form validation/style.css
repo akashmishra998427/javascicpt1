@@ -1,0 +1,29 @@
+body{
+    padding:10px 50px;
+}
+.form-design{
+    font-size: 20px;
+
+}
+.form-design input{
+    width: 50%;
+    padding: 12px 20px;
+    border: 1ps xolid blue;
+    border-radius: 4px;
+    font-style: 15px;
+    margin: 20px;
+}
+.formerror{
+    font-weight: 500;
+    color: red;
+}
+.btn{
+    border-radius: 6px;
+    /* height: 50px; */
+    font-style: 25px;
+    padding-top:10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+}

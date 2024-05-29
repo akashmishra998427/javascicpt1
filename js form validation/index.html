@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Javascript form validation</title>
+  </head>
+  <body>
+    <h1>Regastation form</h1>
+    <form action="/all about events in javascript/" name="form validation" onsubmit="return validation()" method="post">
+      <div class="form-design" id="name">
+        Name: <input type="text" name="fname" required /><span class="formerror"></span>
+      </div>
+      <div class="form-design" id="email">
+        Email: <input type="email" name="femail" required /><span class="formerror"></span>
+      </div>
+      <div class="form-design" id="phone"> 
+        Phone: <input type="phone" name="fphone"required /><span class="formerror"></span>
+      </div>
+      <div class="form-design" id="pass">
+        Password: <input type="password" name="fpass" required /><span class="formerror"></span>
+      </div>
+      <div class="form-design" id="pass">
+        Confirm Password: <input type="password" name="fcpass" required /><span class="formerror"></span>
+      </div>
+      <input type="submit" value="Submit" class="btn">
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
