@@ -104,6 +104,3 @@ equal.addEventListener("click", () => {
   }
 });
 
-cancel.addEventListener("click", () => {
-  dis.style.animation = "hide 3s ease-in-out 1s";
-});
