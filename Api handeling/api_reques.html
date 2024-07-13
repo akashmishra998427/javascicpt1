@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Api REquest</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    
+<span>0	UNSENT	Client has been created. open() not called yet.
+    1	OPENED	open() has been called.
+    2	HEADERS_RECEIVED	send() has been called, and headers and status are available.
+    3	LOADING	Downloading; responseText holds partial data.
+    4	DONE	The operation is complete.</span>
+
+
+</body>
+
+<script>
+    // ajax request 
+    const requesturl='https://jsonplaceholder.typicode.com/comments'
+  const xhr = new  XMLHttpRequest()
+  // this is a method which is required a string and a method for its execution
+  xhr.open("get",requesturl)
+  xhr.onreadystatechange = function(){
+    console.log(xhr.readyState);
+    if(xhr.readyState===4){
+        const data=JSON.parse(this.responseText)
+        // console.log(data)
+        console.log(typeof data)
+        console.log(data.postId)
+    }
+  }
+
+//   console is not the technicaly the part of javascript  
+// ith is a debugger too 
+//  that is injected by the javascript runtime debugger
+//   -------------- learning ho colnsole.log works  ------------------------------------
+// go on v8 git hub repo 
+// look at d8 folder in that folder at line no 104 t0 150 there are the actual implementation  of console.log in javascript   
+  
+  xhr.send()
+
+</script>
+</html>

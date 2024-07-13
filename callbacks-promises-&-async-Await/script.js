@@ -20,33 +20,33 @@ function sum(a,b){
 
 //creating get data function to get the data 
 
-// function getdata(dataid ,getnextdata){
-//     console.log("data",dataid);
-// }
+function getdata(dataid ,getnextdata){
+    console.log("data",dataid);
+}
 
-// function findid(id,getnextdata)
-// {
-//     setTimeout(()=>{
-//         console.log("id",id)
-//         if(getnextdata){
-//             getnextdata();
-//         }
-//     },2000)
-// }
+function findid(id,getnextdata)
+{
+    setTimeout(()=>{
+        console.log("id",id)
+        if(getnextdata){
+            getnextdata();
+        }
+    },2000)
+}
 
 
 // =========    callback hell =========
 
-// getdata(1,()=>{
-//     console.log("getting data 2......")
-//     getnextdata(2,()=>{
-//         console.log("getting data 3......")
-//         getnextdata(3,()=>{
-//             console.log("getting data 4......")
-//             getnextdata(4)
-//         })
-//     });
-// })
+getdata(1,()=>{
+    console.log("getting data 2......")
+    getnextdata(2,()=>{
+        console.log("getting data 3......")
+        getnextdata(3,()=>{
+            console.log("getting data 4......")
+            getnextdata(4)
+        })
+    });
+})
 
 // this is called callback hell 
 // this type of programming becomes difficult to understand & manage
@@ -101,12 +101,35 @@ function getdata(dataid,getnextdata){
     })
 }
 
-function finddata(dataid,getnextdata){
-    return new Promise((resolve,reject)=>{
-        setTimeout(() => {
-            console.log("data",dataid)
+// function finddata(dataid,getnextdata){
+//     return new Promise((resolve,reject)=>{
+//         setTimeout(() => {
+//             console.log("data",dataid)
             
-            reject("i can't give you my personal data okay")
-        },5000)
+//             reject("i can't give you my personal data okay")
+//         },5000)
+//     })
+// }
+
+const getPromise = ()=>{
+   return new Promise((resolve,reject)=>{
+        console.log("calling a promise")
+        // resolve("success");
+        reject("unsuccess")
     })
 }
+
+let promis=getPromise();
+Promise.then(()=>{
+    console.log("promise fullfilled");
+
+})
+Promise.catch(()=>{
+    console.log("the promise is rejected");
+})
+
+// way to access the promises 
+
+// 1 .then((res)=>{...})
+// 2. .catch((res)=>{...})
+
